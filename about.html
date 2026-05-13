@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عن موقع احسبها صح | حاسبة المعدل الجامعي والبكالوريا</title>
+  <meta name="description" content="تعرف على موقع احسبها صح - الأداة الأكثر دقة وسهولة لحساب المعدل الجامعي الجزائري ومعدل البكالوريا. مجاني وبدون تسجيل." />
+  <meta name="keywords" content="حاسبة المعدل الجامعي, معدل البكالوريا, حاسبة GPA, الجامعة الجزائرية, علوم اجتماعية, آداب وفلسفة" />
+  <meta property="og:title" content="عن موقع احسبها صح" />
+  <meta property="og:description" content="أداة مجانية لحساب المعدل الجامعي الجزائري ومعدل البكالوريا بدقة وسهولة." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hichambenlatreche.github.io/about.html" />
+  <meta name="google-adsense-account" content="ca-pub-5387357827783041">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5387357827783041" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #2563eb;
+      --brand-dark: #1d4ed8;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 16px;
+    }
+    body {
+      font-family: 'Cairo', Arial, Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      direction: rtl;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+      color: white;
+      padding: 60px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='28'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .header-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+      display: block;
+      position: relative;
+    }
+    header h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    header p {
+      font-size: clamp(15px, 2.5vw, 20px);
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Nav */
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+    .nav-logo { font-weight: 800; color: var(--brand); font-size: 20px; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--text-muted); font-size: 15px; font-weight: 600; }
+    .nav-links a:hover { color: var(--brand); text-decoration: none; }
+
+    /* Main */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Ad placeholder */
+    .ad-wrapper {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      margin: 40px 0;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Section */
+    section { margin-bottom: 60px; }
+    .section-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: var(--brand-dark);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    h2 {
+      font-size: clamp(22px, 3.5vw, 32px);
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    p { color: var(--text-muted); margin-bottom: 14px; }
+    p strong { color: var(--text); }
+
+    /* Cards grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(37,99,235,0.1); }
+    .card-icon { font-size: 36px; margin-bottom: 14px; display: block; }
+    .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .card p { font-size: 15px; margin: 0; }
+
+    /* Feature list */
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .feat-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .feat-text h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .feat-text p { font-size: 14px; margin: 0; }
+
+    /* Stats */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin: 32px 0;
+    }
+    .stat-box {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: white;
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+    }
+    .stat-num { font-size: 36px; font-weight: 800; }
+    .stat-label { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+
+    /* FAQ */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      background: white;
+    }
+    .faq-q {
+      padding: 18px 20px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-q::after { content: '＋'; color: var(--brand); font-size: 20px; flex-shrink: 0; }
+    .faq-a {
+      padding: 0 20px 18px;
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    /* CTA */
+    .cta-box {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      border-radius: 24px;
+      padding: 52px 36px;
+      text-align: center;
+    }
+    .cta-box h2 { color: white; font-size: 28px; margin-bottom: 12px; }
+    .cta-box p { color: rgba(255,255,255,0.85); font-size: 16px; margin-bottom: 28px; }
+    .btn-primary {
+      display: inline-block;
+      background: white;
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 17px;
+      padding: 14px 36px;
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); text-decoration: none; }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 36px 20px;
+      font-size: 14px;
+    }
+    footer a { color: #60a5fa; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      main { padding: 40px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <span class="nav-logo">🎓 احسبها صح</span>
+  <ul class="nav-links">
+    <li><a href="/">الرئيسية</a></li>
+    <li><a href="/about.html">عن الموقع</a></li>
+    <li><a href="/privacy.html">سياسة الخصوصية</a></li>
+  </ul>
+</nav>
+
+<!-- Header -->
+<header>
+  <span class="header-icon">🎓</span>
+  <h1>عن موقع احسبها صح</h1>
+  <p>الأداة الجزائرية الأولى لحساب المعدل الجامعي ومعدل البكالوريا بدقة وسهولة — مجانية وتعمل دون إنترنت</p>
+</header>
+
+<main>
+
+  <!-- Ad banner top -->
+  <div class="ad-wrapper">
+    <ins class="adsbygoogle"
+         style="display:block;width:100%;height:90px;"
+         data-ad-client="ca-pub-5387357827783041"
+         data-ad-slot="auto"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- About section -->
+  <section>
+    <span class="section-badge">من نحن</span>
+    <h2>ما هو موقع "احسبها صح"؟</h2>
+    <p>
+      <strong>احسبها صح</strong> هو تطبيق ويب جزائري مجاني، صُمِّم خصيصاً لمساعدة الطلاب الجامعيين وطلاب البكالوريا على حساب معدلاتهم بدقة وبسرعة، دون الحاجة إلى التسجيل أو إنشاء حساب.
+    </p>
+    <p>
+      يدعم الموقع نظام الحساب الجامعي الجزائري الرسمي بكلا نظاميه: <strong>60% امتحان + 40% أعمال موجهة</strong>، ونظام <strong>67% + 33%</strong> المعتمد في بعض الكليات. كما يدعم حساب معدل <strong>البكالوريا</strong> لجميع الشعب.
+    </p>
+    <p>
+      يستخدم التطبيق آلاف الطلاب من مختلف الجامعات الجزائرية، وهو متاح على المتصفح مباشرة أو كتطبيق أندرويد قابل للتنزيل.
+    </p>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-num">+10K</div>
+      <div class="stat-label">طالب يستخدم التطبيق</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">٣</div>
+      <div class="stat-label">لغات مدعومة</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">١٠٠%</div>
+      <div class="stat-label">مجاني وبدون إعلانات مدفوعة</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">٢</div>
+      <div class="stat-num" style="font-size:14px;opacity:.85">أنظمة حساب</div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section>
+    <span class="section-badge">المميزات</span>
+    <h2>لماذا تختار احسبها صح؟</h2>
+    <p>
+      وفّرنا لك كل ما يحتاجه طالب جامعي أو بكالوريا في مكان واحد، بواجهة بسيطة ومريحة للعيون.
+    </p>
+
+    <ul class="feature-list">
+      <li>
+        <span class="feat-icon">📐</span>
+        <div class="feat-text">
+          <h4>حساب المعدل الجامعي الدقيق</h4>
+          <p>ادخل نقاطك وأنظمتك المعاملية وسيحسب التطبيق معدلك الفصلي تلقائياً وفق النظام الرسمي الجزائري.</p>
+        </div>
+      </li>
+      <li>
+        <span class="feat-icon">🎓</span>
+        <div class="feat-text">
+          <h4>دعم جميع شعب البكالوريا</h4>
+          <p>من العلوم التجريبية إلى الرياضيات والآداب والتسيير، يدعم التطبيق جميع شعب البكالوريا الجزائرية مع معاملاتها الرسمية.</p>
+        </div>
+      </li>
+      <li>
+        <span class="feat-icon">🌙</span>
+        <div class="feat-text">
+          <h4>الوضع الليلي وتخصيص الألوان</h4>
+          <p>واجهة مريحة مع دعم الوضع الليلي وإمكانية تخصيص لون التطبيق حسب ذوقك.</p>
+        </div>
+      </li>
+      <li>
+        <span class="feat-icon">🌐</span>
+        <div class="feat-text">
+          <h4>ثلاث لغات: العربية، الفرنسية، الإنجليزية</h4>
+          <p>التطبيق يدعم العربية والفرنسية والإنجليزية لخدمة جميع الطلاب.</p>
+        </div>
+      </li>
+      <li>
+        <span class="feat-icon">📅</span>
+        <div class="feat-text">
+          <h4>جدول الامتحانات</h4>
+          <p>يمكنك رفع صورة جدول الامتحانات والوصول إليها في أي وقت حتى بدون إنترنت.</p>
+        </div>
+      </li>
+      <li>
+        <span class="feat-icon">🤲</span>
+        <div class="feat-text">
+          <h4>أذكار وآيات قرآنية</h4>
+          <p>قسم خاص بالأذكار والآيات القرآنية المتعلقة بالصبر والعلم والنجاح لتحفيز الطلاب.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Ad middle -->
+  <div class="ad-wrapper">
+    <ins class="adsbygoogle"
+         style="display:block;width:100%;height:250px;"
+         data-ad-client="ca-pub-5387357827783041"
+         data-ad-slot="auto"
+         data-ad-format="rectangle"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- How it works -->
+  <section>
+    <span class="section-badge">كيف يعمل</span>
+    <h2>كيف تحسب معدلك في ٣ خطوات؟</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <span class="card-icon">1️⃣</span>
+        <h3>اختر تخصصك</h3>
+        <p>اختر بين العلوم الاجتماعية، الآداب، أو أضف تخصصك الخاص مع موادك ومعاملاتها.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">2️⃣</span>
+        <h3>أدخل نقاطك</h3>
+        <p>أدخل نقطة الامتحان ونقطة أعمال موجهة لكل مادة، والتطبيق يحسب الباقي.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">3️⃣</span>
+        <h3>اعرف نتيجتك</h3>
+        <p>يظهر معدلك الإجمالي مع تفاصيل كل مادة، وإمكانية مشاركة النتيجة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <span class="section-badge">أسئلة شائعة</span>
+    <h2>أسئلة يسألها الطلاب كثيراً</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">هل التطبيق مجاني تماماً؟</div>
+      <div class="faq-a">نعم، موقع احسبها صح مجاني 100% ولا يتطلب أي تسجيل أو اشتراك. يتم دعم الموقع عبر إعلانات Google AdSense غير المزعجة.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">هل يعمل التطبيق بدون إنترنت؟</div>
+      <div class="faq-a">نعم، بعد تحميل الصفحة لأول مرة، يمكنك استخدام حاسبة المعدل بدون إنترنت. قسم جدول الامتحانات يعمل أيضاً دون اتصال إذا رفعت الصور مسبقاً.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">ما هو الفرق بين نظام 60/40 و 67/33؟</div>
+      <div class="faq-a">نظام 60/40 يعني أن الامتحان النهائي يأخذ 60% من النقطة النهائية وأعمال موجهة 40%، بينما في نظام 67/33 يأخذ الامتحان 67% والأعمال الموجهة 33%. يختلف النظام من كلية لأخرى، والتطبيق يدعم كليهما.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">هل يدعم التطبيق جميع شعب البكالوريا؟</div>
+      <div class="faq-a">نعم، يدعم التطبيق جميع شعب البكالوريا الجزائرية: العلوم التجريبية، الرياضيات، التقني رياضي، التسيير والاقتصاد، آداب وفلسفة، لغات أجنبية، وغيرها.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">كيف أتواصل مع المطور؟</div>
+      <div class="faq-a">يمكنك التواصل مع المطور عبر صفحة الإنستغرام أو تيليغرام من داخل التطبيق في قسم الإعدادات.</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <h2>ابدأ احسب معدلك الآن</h2>
+    <p>مجاني، سريع، ودقيق — بدون تسجيل أو انتظار</p>
+    <a href="/" class="btn-primary">🚀 افتح الحاسبة</a>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 احسبها صح — أداة مجانية لطلاب الجزائر</p>
+  <div class="footer-links">
+    <a href="/">الرئيسية</a>
+    <a href="/about.html">عن الموقع</a>
+    <a href="/privacy.html">سياسة الخصوصية</a>
+  </div>
+</footer>
+
+</body>
+</html>
